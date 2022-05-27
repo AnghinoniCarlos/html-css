@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+
+    <!--Ir nos tres pontinhos(verticais) do Google Chrome e clicar em mais ferramentas e depois em Ferramentas do Desenvolvedor -->
+    <style>
+        h1 {
+            background-color: lightgray;
+
+            /** Altura e Largura**/
+            width: 300px;
+            height: 300px;
+
+
+
+            /** Colocar uma borda**/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /** ou todas informações numa linha:
+                border: 10px solid darkslategray; **/
+
+
+
+           /** Colocar uma linha por fora da borda**/
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /** ou todas informações numa linha:
+                outline: 5px dashed salmon; **/
+
+
+
+            /** Colocar padding por dentro da borda**/
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            /** ou todas informações numa linha:
+                padding: 10px 10px 10px 10px; ou
+                padding: 10px (vale para todos) **/  
+            
+            
+
+
+            /** Colocar margem**/
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+        }
+        
+        a {
+            display: block;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Prágrafos também são elxemplos de vox-level, mas os <a href="#">links são exemplos de Caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>
