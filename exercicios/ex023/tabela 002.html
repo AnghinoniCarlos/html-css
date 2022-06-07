@@ -10,18 +10,46 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+            /** Cabeçalho da tabela fixo (congelado) **/
+         thead > tr > th {
+             position: sticky;
+             top: -1px;
+             background-color: #383838;
+         }
+
+    
+            /** Efeito Zebrado - Criando tarja cinza de duas em duas linhas 
+            - podemos usar odd - impar
+            - podemos usar even - par
+            - uma cor por linha: 
+                * tbody > tr:nth-child (even): background-color: red; 
+                * tbody > tr:nth-child (odd): background-color: yellow; 
+            **/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -33,16 +61,18 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
         TABLE = tabela
+            CAPTION = Legenda da tabela
             THEAD = Área da cabeça da tabela - Posso ter: (TR,TD,TH)
             TBODY = Área do corpo da tabela - Posso ter: (TR,TD,TH)
             TFOOD = Área do rodapé da tabela - Posso ter: (TR,TD,TH)
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -157,12 +187,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
-
-
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sequi necessitatibus, itaque laudantium libero repellendus, corrupti assumenda illum possimus, voluptate esse placeat! Minus aliquid perspiciatis corporis a dignissimos tempore fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem labore veritatis. Autem fugit modi pariatur, eum dolorum ex inventore doloremque itaque nulla atque consequuntur quibusdam molestiae quisquam hic expedita?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sequi necessitatibus, itaque laudantium libero repellendus, corrupti assumenda illum possimus, voluptate esse placeat! Minus aliquid perspiciatis corporis a dignissimos tempore fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem labore veritatis. Autem fugit modi pariatur, eum dolorum ex inventore doloremque itaque nulla atque consequuntur quibusdam molestiae quisquam hic expedita?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sequi necessitatibus, itaque laudantium libero repellendus, corrupti assumenda illum possimus, voluptate esse placeat! Minus aliquid perspiciatis corporis a dignissimos tempore fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem labore veritatis. Autem fugit modi pariatur, eum dolorum ex inventore doloremque itaque nulla atque consequuntur quibusdam molestiae quisquam hic expedita?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sequi necessitatibus, itaque laudantium libero repellendus, corrupti assumenda illum possimus, voluptate esse placeat! Minus aliquid perspiciatis corporis a dignissimos tempore fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem labore veritatis. Autem fugit modi pariatur, eum dolorum ex inventore doloremque itaque nulla atque consequuntur quibusdam molestiae quisquam hic expedita?</p>
 </body>
 </html>
