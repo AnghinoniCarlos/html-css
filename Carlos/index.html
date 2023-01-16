@@ -8,6 +8,70 @@
     <title>Servidores do IFSul Campus Pelotas</title>
 </head>
 <body>
+    <header>
+        <img src="ifsul.png" alt="IFSul">
+        <h1>Instituto Federal Sul-rio-grandense Campus Pelotas</h1>
+    </header>
+
+    <section>
+        <h2>Servidores do IFSul Campus Pelotas</h2>
+    </section>
+
+    <div class="container">
+        <nav>
+            <ul class="menu">
+                <a href="index.php"><li>Cadastro</li></a>
+                <a href="consultas.php"><li>Consultas</li></a>
+
+                <a><li>Usuários</li></a>
+                <a><li>Fornecedores</li></a>
+                <a><li>Clientes</li></a>
+                <a><li>Serviços</li></a>
+                <a><li>Consultas</li></a>
+                <a><li>Sair</li></a>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Cadastro de Usúarios</h1>
+            <hr><br><br>
+            
+            <form method="post" action="processa.php">
+                <input type="submit" class="btn salvar" value="Salvar">
+                <input type="reset" class="btn limpar" value="Limpar">
+                <a href="excluir.php"><input type="button" class="btn excluir" value="Excluir"></a>
+                <br><br>
+                
+                <fieldset><legend>  Dados Pessoais</legend><br>
+                
+                Nome:<br>
+                <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus><br><br>
+                E-mail:<br>
+                <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required><br><br>
+                Titulação:<br>
+                <input type="text" name="profissao" class="campo" placeholder="Profissão" maxlength="40" required><br><br>
+
+            </fieldset>
+            <br><br>
+
+            <fieldset><legend>  Dados Profissionais</legend>
+                <br>
+                
+                Nome:<br>
+                <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus><br><br>
+                E-mail:<br>
+                <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required><br><br>
+                Profissão:<br>
+                <input type="text" name="profissao" class="campo" placeholder="Profissão" maxlength="40" required><br><br>
+            </fieldset>
+            <br><br>
+
+            </form>
+        </main>
+
+    </div>
+
+  
     
 </body>
 </html>

@@ -1,5 +1,139 @@
+* {
+    margin: 2px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: dimgray;
+    background-color: gray;
     margin: 0px;
 }
+
+header{
+    margin: 2px;
+    width: 1445x;
+    height: 200px;
+    background-color: white;
+    box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 10px;
+}
+
+section {
+    margin:2px;
+    background-color: rgb(19, 124, 36);;
+    width: 1460px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    width: 1231px;
+    height: 800px;
+    margin-left: 10px;
+	box-sizing: border-box;
+    padding: 15px;
+    float: left;
+    background-color: #fff;
+	color: #333;
+    border-radius: 10px;
+    box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.5);
+   
+}
+
+nav {
+    background-color: #444;
+    border-radius: 10px;
+    width: 200px;
+    height: 500px;
+	background-color:#555;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+ul.menu {
+    list-style-type: none;
+}
+
+
+ul.menu li:hover {
+    /** Quando mouse passa por cima fica sublinhado **/
+   background-color: yellowgreen;
+ }
+
+ul.menu li {
+    width: 110px;
+    height: 30px;
+    line-height: 25px;
+    color: white;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: #2a578b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.salvar {
+  background-image: url('icons8-salvar-94.png');
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-size: 20px;
+    background-color: #46ad7a;
+    color:#fff;
+    cursor: pointer;
+ }
+ 
+ .limpar {
+    background-image: url('icons8-dustpan-48.png');
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-size: 20px;
+    background-color: #425490;
+    color:#fff;
+    cursor: pointer;
+ }
+ 
+ .excluir {
+    background-image: url('icons8-excluir-64.png');
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-size: 20px;
+    background-color: #ad4656;
+    color:#fff;
+    cursor: pointer;
+ } 
+ 
+ .campo {
+     width: 200px;
+     height: 30px;
+     border-radius: 3px;
+     margin-top: 5px;
+     border: 1px solid #ddd;
+ }
+
+
+
+
+
+
+
+
+
