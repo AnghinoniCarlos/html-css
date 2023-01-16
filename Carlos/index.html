@@ -37,13 +37,10 @@
             <hr><br><br>
             
             <form method="post" action="processa.php">
-                <input type="submit" class="btn salvar" value="Salvar">
-                <input type="reset" class="btn limpar" value="Limpar">
-                <a href="excluir.php"><input type="button" class="btn excluir" value="Excluir"></a>
-                <br><br>
                 
                 <fieldset><legend>  Dados Pessoais</legend><br>
                     <form action="">
+
                         <strong>Nome</strong>
                         <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus>
                         
@@ -51,24 +48,81 @@
                         <strong>E-mail:</strong>
                         <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required>
                         
-                        <strong>Titulação:</strong>
-                        <input type="text" name="profissao" class="campo" placeholder="Profissão" maxlength="40" required><br><br>
+                        <strong>Telefone:</strong>
+                        <input type="tel" id="foneid" class="campo" placeholder="(xx)xxx-xx-xx-xx" name="fone" maxlength="50" required>
 
-                        <label><strong>Titulação:</strong>Titulação:
+                        <label><strong>CPF:</strong></label>
+                        <input type="text" name="cpf" class="campo" size="9" maxlength="9"> - <input type="text" name="cpf2" class="campo2" size="2" maxlength="2">
+
+                        <br><br>
+
+                        <label for="rg"> <strong>RG:</strong> </label>
+                        <input type="text" name="cpf" class="campo" size="10" maxlength="10">
+
+                        <label><strong>Data de Nasc.:</strong></label>
+
+                            <input type="text" name="dia" size="2" class="campo3" maxlength="2" value="dd"> 
+                            <input type="text" name="mes" size="2" class="campo3" maxlength="2" value="mm"> 
+                            <input type="text" name="ano" size="4" class="campo3" maxlength="4" value="aaaa">
+                            
+                            <label><strong>Naturalidade:</strong>
+                                <select name="escolaridade" class="campo">
+                                     <option value="pl"> Pelotas </option>
+                                     <option value="sm"> Santa Maria </option>
+                                     <option value="poa"> Porto Alegre </option>
+                                     <option value="nh"> Novo Hamburgo </option>
+                                </select>
+                                </label>
+                        
+
+                            <label for="estado" ><strong>Estado:</strong></label>
+   
+                            <select name="estado" class="campo"> 
+                            <option value="ac">Acre</option> 
+                            <option value="al">Alagoas</option> 
+                            <option value="am">Amazonas</option> 
+                            <option value="ap">Amapá</option> 
+                            <option value="ba">Bahia</option> 
+                            <option value="ce">Ceará</option> 
+                            <option value="df">Distrito Federal</option> 
+                            <option value="es">Espírito Santo</option> 
+                            <option value="go">Goiás</option> 
+                            <option value="ma">Maranhão</option> 
+                            <option value="mt">Mato Grosso</option> 
+                            <option value="ms">Mato Grosso do Sul</option> 
+                            <option value="mg">Minas Gerais</option> 
+                            <option value="pa">Pará</option> 
+                            <option value="pb">Paraíba</option> 
+                            <option value="pr">Paraná</option> 
+                            <option value="pe">Pernambuco</option> 
+                            <option value="pi">Piauí</option> 
+                            <option value="rj">Rio de Janeiro</option> 
+                            <option value="rn">Rio Grande do Norte</option> 
+                            <option value="ro">Rondônia</option> 
+                            <option value="rs">Rio Grande do Sul</option> 
+                            <option value="rr">Roraima</option> 
+                            <option value="sc">Santa Catarina</option> 
+                            <option value="se">Sergipe</option> 
+                            <option value="sp">São Paulo</option> 
+                            <option value="to">Tocantins</option> 
+                        </select>
+                        <br><br>
+
+                        <label><strong>Titulação:</strong>
                             <input type="radio" name="cargo" value="1" checked> Pós Doutorado 
                             <input type="radio" name="cargo" value="2" checked> Doutorado 
                             <input type="radio" name="cargo" value="3" checked> Mestrado 
                             <input type="radio" name="cargo" value="4" > Especialisação
                             <input type="radio" name="cargo" value="5" > Graduação
 
-                       </label><br><br>
+                       </label> <br><br>
 
                        <label><strong>Área da úlitma titulação:</strong>
-                        <select name="escolaridade">
+                        <select name="escolaridade" class="campo">
                              <option value="epc"> Engenharia, produção e construção </option>
                              <option value="ee"> Engenheiro Eletricista </option>
                              <option value="em"> Enegnheiro Mecânico </option>
-                             <option value="ed"> Educação </option>
+                             <option value="ctic"> Computação e Tecnologias da Informação e Comunicação (TIC) </option>
                         </select>
                         </label>
                     
@@ -76,10 +130,6 @@
                     <br><br>
         
 
-                
-                
-                
-                
                     </form>
                 
 
@@ -90,8 +140,53 @@
             <fieldset><legend>  Dados Profissionais</legend>
                 <br>
                 
-                Nome:
-                <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus>
+                <label for="siape"> <strong>Matricula:</strong> </label>
+                <input type="text" name="matricula" class="campo" size="7" maxlength="7">
+
+                <label>Cargo:
+                    <select name="escolaridade" class="campo">
+                         <option value="sl"> Servente de limpeza </option>
+                         <option value="aa"> Assistnete em Administração </option>
+                         <option value="ec"> Economista </option>
+                         <option value="ec"> Tecnico em Contabilidade </option>
+                    </select>
+                    </label>
+
+                <label for="lotacao" ><strong>Lotação SIAPE:</strong></label>
+   
+                            <select name="estado" class="campo4"> 
+                            <option value="ac">PL-DIRGER - DIREÇÃO-GERAL DO CÂMPUS PELOTAS</option> 
+                            <option value="al">PL-ASSGD - ASSESSORIA DO GABINETE DO DIRETOR</option> 
+                            <option value="am">PL-DIRAP - DIRETORIA DE ADMINISTRAÇÃO E DE PLANEJAMENTO</option> 
+                            <option value="ap">PL-DIREN - DIRETORIA DE ENSINO</option> 
+                            <option value="ba">PL-DIRPEX - DIRETORIA DE PESQUISA E EXTENSÃO</option> 
+                            <option value="ce">PL-CRAEGP - COORD DE REGIST ACAD DO ENS DE GRAD E DE PÓS-GRAD</option> 
+                            <option value="df">PL-CAFSTSI - COORD DE ÁF DO CURSO SUP DE TECNOL EM SIST P/ INTERNET</option> 
+                            <option value="es">Espírito Santo</option> 
+                            <option value="go">Goiás</option> 
+                            <option value="ma">Maranhão</option> 
+                            <option value="mt">Mato Grosso</option> 
+                            <option value="ms">Mato Grosso do Sul</option> 
+                            <option value="mg">Minas Gerais</option> 
+                            <option value="pa">Pará</option> 
+                            <option value="pb">Paraíba</option> 
+                            <option value="pr">Paraná</option> 
+                            <option value="pe">Pernambuco</option> 
+                            <option value="pi">Piauí</option> 
+                            <option value="rj">Rio de Janeiro</option> 
+                            <option value="rn">Rio Grande do Norte</option> 
+                            <option value="ro">Rondônia</option> 
+                            <option value="rs">Rio Grande do Sul</option> 
+                            <option value="rr">Roraima</option> 
+                            <option value="sc">Santa Catarina</option> 
+                            <option value="se">Sergipe</option> 
+                            <option value="sp">São Paulo</option> 
+                            <option value="to">Tocantins</option> 
+                        </select> <br><br>
+
+
+
+
                 E-mail:
                 <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required>
                 Profissão:
@@ -104,22 +199,16 @@
                     <input type="radio" name="cargo" value="3" > Recepção
                </label><br><br>
 
-               <label>Cargo:
-                <select name="escolaridade">
-                     <option value="sl"> sevente de limpeza </option>
-                     <option value="aa"> Assistnete em Administração </option>
-                     <option value="ec"> Economista </option>
-                     <option value="ec"> Tecnico em Contabilidade </option>
-                </select>
-                </label>
-
-
-
-
-
-
             </fieldset>
             <br><br>
+
+            <input type="submit" class="btn salvar" value="Salvar">
+            <input type="reset" class="btn limpar" value="Limpar">
+            <a href="excluir.php"><input type="button" class="btn excluir" value="Excluir"></a>
+            <br><br>
+
+
+
 
             </form>
         </main>
