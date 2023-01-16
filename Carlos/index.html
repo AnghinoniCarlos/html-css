@@ -43,13 +43,46 @@
                 <br><br>
                 
                 <fieldset><legend>  Dados Pessoais</legend><br>
+                    <form action="">
+                        <strong>Nome</strong>
+                        <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus>
+                        
+                        
+                        <strong>E-mail:</strong>
+                        <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required>
+                        
+                        <strong>Titulação:</strong>
+                        <input type="text" name="profissao" class="campo" placeholder="Profissão" maxlength="40" required><br><br>
+
+                        <label><strong>Titulação:</strong>Titulação:
+                            <input type="radio" name="cargo" value="1" checked> Pós Doutorado 
+                            <input type="radio" name="cargo" value="2" checked> Doutorado 
+                            <input type="radio" name="cargo" value="3" checked> Mestrado 
+                            <input type="radio" name="cargo" value="4" > Especialisação
+                            <input type="radio" name="cargo" value="5" > Graduação
+
+                       </label><br><br>
+
+                       <label><strong>Área da úlitma titulação:</strong>
+                        <select name="escolaridade">
+                             <option value="epc"> Engenharia, produção e construção </option>
+                             <option value="ee"> Engenheiro Eletricista </option>
+                             <option value="em"> Enegnheiro Mecânico </option>
+                             <option value="ed"> Educação </option>
+                        </select>
+                        </label>
+                    
+                    </fieldset>
+                    <br><br>
+        
+
                 
-                Nome:<br>
-                <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus><br><br>
-                E-mail:<br>
-                <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required><br><br>
-                Titulação:<br>
-                <input type="text" name="profissao" class="campo" placeholder="Profissão" maxlength="40" required><br><br>
+                
+                
+                
+                    </form>
+                
+
 
             </fieldset>
             <br><br>
@@ -57,12 +90,34 @@
             <fieldset><legend>  Dados Profissionais</legend>
                 <br>
                 
-                Nome:<br>
-                <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus><br><br>
-                E-mail:<br>
-                <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required><br><br>
-                Profissão:<br>
+                Nome:
+                <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus>
+                E-mail:
+                <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required>
+                Profissão:
                 <input type="text" name="profissao" class="campo" placeholder="Profissão" maxlength="40" required><br><br>
+
+
+                <label>Área de atuação:
+                    <input type="radio" name="cargo" value="1" checked> Gerência
+                    <input type="radio" name="cargo" value="2" > Financeiro
+                    <input type="radio" name="cargo" value="3" > Recepção
+               </label><br><br>
+
+               <label>Cargo:
+                <select name="escolaridade">
+                     <option value="sl"> sevente de limpeza </option>
+                     <option value="aa"> Assistnete em Administração </option>
+                     <option value="ec"> Economista </option>
+                     <option value="ec"> Tecnico em Contabilidade </option>
+                </select>
+                </label>
+
+
+
+
+
+
             </fieldset>
             <br><br>
 
