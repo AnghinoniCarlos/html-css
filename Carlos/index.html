@@ -152,6 +152,23 @@
                     </select>
                     </label>
 
+                    <label><strong>Data Inicio no Serv. Público:</strong></label>
+
+                            <input type="text" name="dia" size="2" class="campo3" maxlength="2" value="dd"> 
+                            <input type="text" name="mes" size="2" class="campo3" maxlength="2" value="mm"> 
+                            <input type="text" name="ano" size="4" class="campo2" maxlength="2" value="aaaa">
+                            <br><br>
+
+
+                    <label><strong>Jornada de trabalho</strong>
+                        <select name="escolaridade" class="campo">
+                             <option value="de"> Dedicação Exclusiva </option>
+                             <option value="aa"> Sem Dedicação Exclusiva </option>
+
+                        </select>
+                        </label>
+                    
+
                 <label for="lotacao" ><strong>Lotação SIAPE:</strong></label>
    
                             <select name="estado" class="campo4"> 
@@ -184,28 +201,61 @@
                             <option value="to">Tocantins</option> 
                         </select> <br><br>
 
-
-
-
-                E-mail:
-                <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required>
-                Profissão:
-                <input type="text" name="profissao" class="campo" placeholder="Profissão" maxlength="40" required><br><br>
-
-
-                <label>Área de atuação:
-                    <input type="radio" name="cargo" value="1" checked> Gerência
-                    <input type="radio" name="cargo" value="2" > Financeiro
-                    <input type="radio" name="cargo" value="3" > Recepção
-               </label><br><br>
-
             </fieldset>
             <br><br>
 
+            <fieldset><legend>  Funções Atuais:</legend>
+                <br>
+                
+
+                <label><strong>Função:</strong>
+                    <select name="escolaridade" class="campo">
+                         <option value="fg"> Função Gratividada - IFES </option>
+                         <option value="cd"> Cargo de Direção </option>
+                         <option value="ec"> Economista </option>
+                         <option value="ec"> Tecnico em Contabilidade </option>
+                    </select>
+                </label>
+
+                <label><strong>Atividade:</strong>
+                    <select name="escolaridade" class="campo">
+                         <option value="fg"> 033 - Coordeandor </option>
+                         <option value="cd"> Cargo de Direção </option>
+                         <option value="ec"> Economista </option>
+                         <option value="ec"> Tecnico em Contabilidade </option>
+                    </select>
+                </label>
+
+                <label><strong>Setor SUAP:</strong>
+                    <select name="escolaridade" class="campo">
+                         <option value="gabdir"> PL-GABDIR</option>
+                         <option value="cd"> Cargo de Direção </option>
+                         <option value="ec"> Economista </option>
+                         <option value="ec"> Tecnico em Contabilidade </option>
+                    </select>
+                </label>
+
+                <label for="lotacao" ><strong>Modelo de :</strong></label>
+   
+                            <select name="estado" class="campo3"> 
+                            <option value="cd2">CD2</option> 
+                            <option value="cd3">CD3</option> 
+                            <option value="cd4">CD4</option> 
+                            <option value="fg1">FG1</option> 
+                            <option value="fg2">FG2</option> 
+                            <option value="fg4">FG4</option> 
+                            <option value="fcc">FCC</option> 
+                        </select> <br><br>
+
+
+
+
+                </fieldset>
             <input type="submit" class="btn salvar" value="Salvar">
             <input type="reset" class="btn limpar" value="Limpar">
             <a href="excluir.php"><input type="button" class="btn excluir" value="Excluir"></a>
             <br><br>
+           
 
 
 
