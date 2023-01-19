@@ -20,20 +20,18 @@
     <div class="container">
         <nav>
             <ul class="menu">
-                <a href="index.php"><li>Cadastro</li></a>
-                <a href="consultas.php"><li>Consultas</li></a>
 
-                <a><li>Usuários</li></a>
-                <a><li>Fornecedores</li></a>
-                <a><li>Clientes</li></a>
-                <a><li>Serviços</li></a>
-                <a><li>Consultas</li></a>
+                <a href="index.php"><li>Servidores</li></a>
+                <a><li>Terceirizados</li></a>
+                <a><li>Estagiários</li></a>
+                <a><li>Setores</li></a>
+                <a href="consultas.php"><li>Consultas</li></a>
                 <a><li>Sair</li></a>
             </ul>
         </nav>
 
         <main>
-            <h1>Cadastro de Usúarios</h1>
+            <h1>Cadastro dos Servidores</h1>
             <hr><br><br>
             
             <form method="post" action="processa.php">
@@ -66,7 +64,7 @@
                             <input type="text" name="ano" size="4" class="campo3" maxlength="4" value="aaaa">
                             
                             <label><strong>Naturalidade:</strong>
-                                <select name="escolaridade" class="campo">
+                                <select name="naturalidade" class="campo">
                                      <option value="pl"> Pelotas </option>
                                      <option value="sm"> Santa Maria </option>
                                      <option value="poa"> Porto Alegre </option>

@@ -59,6 +59,19 @@ nav {
     padding: 15px;
 }
 
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
 
 ul.menu {
     list-style-type: none;
@@ -122,12 +135,13 @@ ul.menu li {
  } 
  
  .campo {
-     width: 200px;
-     height: 30px;
-     border-radius: 3px;
-     margin-top: 5px;
-     border: 1px solid #ddd;
- }
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    
+}
 
  .campo2 {
     width: 30px;
