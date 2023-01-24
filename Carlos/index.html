@@ -38,44 +38,45 @@
                 
                 <fieldset><legend>  <larger>Dados Pessoais</larger></legend><br>
                     <form action="">
+                        <div class="input-group">
+                            <div class="input-box">
+                                <div class="input-group">
+                                    <div class="input-box">
+                                        <label for="name"><strong>Nome Completo</strong></label>
+                                        <input id="name" type="text" name="name" placeholder="Digite seu primeiro nome" required>
+                                    </div>
 
-                        <strong>Nome</strong>
-                        <input type="text" name="nome" class="campo" placeholder="Nome Completo" maxlength="40" required autofocus>
-                        
-                        
-                        <strong>E-mail:</strong>
-                        <input type="email" name="email" class="campo" placeholder="nome@provedor" maxlength="50" required>
-                        
-                        <strong>Telefone:</strong>
-                        <input type="tel" id="foneid" class="campo" placeholder="(xx)xxx-xx-xx-xx" name="fone" maxlength="50" required>
+                                    <div class="input-box">
+                                        <label for="email">E-mail</label>
+                                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                                    </div>
 
-                        <label><strong>CPF:</strong></label>
-                        <input type="text" name="cpf" class="campo" size="9" maxlength="9"> - <input type="text" name="cpf2" class="campo2" size="2" maxlength="2">
+                                    <div class="input-box">
+                                        <label for="number">Celular</label>
+                                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                                    </div>
+                                    
+                                    <div class="input-box">
+                                        <label for="number">CPF</label>
+                                        <input id="number" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                                    </div>
+                
+                                    <div class="input-box">
+                                        <label for="number">RG</label>
+                                        <input id="number" type="text" name="cpf" placeholder="xxxxxxxxxx" required>
+                                    </div>
 
-                        <br><br>
+                                    <div class="input-box">
+                                        <label for="name"><strong>Naturalidade</strong></label>
+                                        <input id="name" type="text" name="name" placeholder="naturalidade" required>
+                                    </div>
 
-                        <label for="rg"> <strong>RG:</strong> </label>
-                        <input type="text" name="cpf" class="campo" size="10" maxlength="10">
+                                    <div class="input-box">
 
-                        <label><strong>Data de Nasc.:</strong></label>
-
-                            <input type="text" name="dia" size="2" class="campo3" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" class="campo3" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" class="campo3" maxlength="4" value="aaaa">
-                            
-                            <label><strong>Naturalidade:</strong>
-                                <select name="naturalidade" class="campo">
-                                     <option value="pl"> Pelotas </option>
-                                     <option value="sm"> Santa Maria </option>
-                                     <option value="poa"> Porto Alegre </option>
-                                     <option value="nh"> Novo Hamburgo </option>
-                                </select>
-                                </label>
-                        
-
-                            <label for="estado" ><strong>Estado:</strong></label>
+                                    <label for="estado" ><strong>Estado:</strong></label>
    
-                            <select name="estado" class="campo"> 
+                            <select id="name" type="text" name="name" placeholder="" required>
+                            <option value=""></option> 
                             <option value="ac">Acre</option> 
                             <option value="al">Alagoas</option> 
                             <option value="am">Amazonas</option> 
@@ -103,27 +104,39 @@
                             <option value="se">Sergipe</option> 
                             <option value="sp">São Paulo</option> 
                             <option value="to">Tocantins</option> 
-                        </select>
-                        <br><br>
+                            </select>
+                        </div>
 
-                        <label><strong>Titulação:</strong>
-                            <input type="radio" name="cargo" value="1" checked> Pós Doutorado 
-                            <input type="radio" name="cargo" value="2" checked> Doutorado 
-                            <input type="radio" name="cargo" value="3" checked> Mestrado 
-                            <input type="radio" name="cargo" value="4" > Especialisação
-                            <input type="radio" name="cargo" value="5" > Graduação
+                        <div class="input-box">
+                            <label for="number">Data de Nascimento</label>
+                            <input id="number" type="date" name="number" placeholder="xx-xx-xxxx" required>
+                        </div>
 
-                       </label> <br><br>
+                        <div class="input-box">
+                            <label for="name"><strong>Endereço</strong></label>
+                            <input id="name" type="text" name="name" placeholder="endereco" required>
+                        </div>
+                       
 
-                       <label><strong>Área da úlitma titulação:</strong>
-                        <select name="escolaridade" class="campo">
-                             <option value="epc"> Engenharia, produção e construção </option>
-                             <option value="ee"> Engenheiro Eletricista </option>
-                             <option value="em"> Enegnheiro Mecânico </option>
-                             <option value="ctic"> Computação e Tecnologias da Informação e Comunicação (TIC) </option>
-                        </select>
-                        </label>
-                    
+
+
+
+
+
+
+
+
+
+
+
+                
+                                
+
+
+                                
+                        
+
+                           
                     </fieldset>
                     <br><br>
         
@@ -135,197 +148,7 @@
             </fieldset>
             <br><br>
 
-            <fieldset><legend>  Dados Profissionais</legend>
-                <br>
-                
-                <label for="siape"> <strong>Matricula:</strong> </label>
-                <input type="text" name="matricula" class="campo" size="7" maxlength="7">
-
-                <label><strong>Cargo</strong>
-                    <select name="escolaridade" class="campo">
-                         <option value="sl"> Servente de limpeza </option>
-                         <option value="aa"> Assistnete em Administração </option>
-                         <option value="ec"> Economista </option>
-                         <option value="tc"> Tecnico em Contabilidade </option>
-                    </select>
-                    </label>
-
-                    <label><strong>Data Inicio no Serv. Público:</strong></label>
-
-                            <input type="text" name="dia" size="2" class="campo3" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" class="campo3" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" class="campo2" maxlength="2" value="aaaa">
-                            <br><br>
-
-
-                    <label><strong>Jornada de trabalho</strong>
-                        <select name="escolaridade" class="campo">
-                             <option value="de"> Dedicação Exclusiva </option>
-                             <option value="aa"> Sem Dedicação Exclusiva </option>
-
-                        </select>
-                        </label>
-                    
-
-                <label for="lotacao" ><strong>Lotação SIAPE:</strong></label>
-   
-                            <select name="lotacao" class="campo4"> 
-                            <option value="dirger">PL-DIRGER - DIREÇÃO-GERAL DO CÂMPUS PELOTAS</option> 
-                            <option value="ass">PL-ASSGD - ASSESSORIA DO GABINETE DO DIRETOR</option> 
-                            <option value="dirap">PL-DIRAP - DIRETORIA DE ADMINISTRAÇÃO E DE PLANEJAMENTO</option> 
-                            <option value="coagpes">PL-COAGPES - COORDENADORIA DE APOIO À GESTÃO DE PESSOAS</option>
-                            <option value="capo">PL-CAPO - COORDENADORIA DE APOIO A PROJETOS E OBRAS</option> 
-                            <option value="cap">PL-CAP - COORDENADORIA DE APOIO À PROJETOS</option> 
-                            <option value="dead">PL-DEAD - DEPARTAMENTO DE ADMINISTRAÇÃO</option> 
-                            <option value="coalm">PL-COALM - COORDENADORIA DE ALMOXARIFADO</option> 
-                            <option value="coagc">PL-COAGC - COORDENADORIA DE APOIO À GESTÃO DE CONTRATOS</option> 
-                            <option value="coagp">PL-COAGP - COORDENADORIA DE APOIO À GESTÃO DE PATRIMÔNIO</option> 
-                            <option value="compras">PL-COMPRAS - COORDENADORIA DE COMPRAS</option> 
-                            <option value="corcam">PL-CORÇAM - COORDENADORIA DE CONTABILIDADE E ORÇAMENTO</option> 
-                            <option value="copat">PL-COPAT - COORDENADORIA DE PROTOCOLO, ARQUIVO E TRANSPORTE</option> 
-                            <option value="cofin">PL-COFIN - COORDENADORIA FINANCEIRA</option> 
-                            <option value="deme">PL-DEME - DEPARTAMENTO DE MANUTENÇÃO DA ESTRUTURA</option> 
-                            <option value="coimr">PL-COIMR - COORDENADORIA DE INSTALAÇÃO E MANUTENÇÃO DE REFRIGERAÇÃO</option> 
-                            <option value="coime">PL-COIME - COORDENADORIA DE INSTALAÇÃO E MANUTENÇÃO ELÉTRICA</option> 
-                            <option value="coimt">PL-COIMT - COORDENADORIA DE INSTALAÇÃO E MANUTENÇÃO TELEFÔNICA</option> 
-                            <option value="comcc">PL-COMCC - COORDENADORIA DE MANUTENÇÃO DA CONSTRUÇÃO CIVIL</option> 
-                            <option value="comem">PL-COMEM - COORDENADORIA DE MANUTENÇÃO DE ESQUADRIAS E MÓVEIS</option> 
-                            <option value="comms">PL-COMMS - COORDENADORIA DE MANUTENÇÃO MECÂNICA E SERVIÇOS</option> 
-                            <option value="deti">PL-DETI - DEPARTAMENTO DE TECNOLOGIA DA INFORMAÇÃO</option> 
-                            <option value="cmr">PL-COMR - COORDENADORIA DE MANUTENÇÃO E REDES</option> 
-                            <option value="cosg">PL-COSG - COORDENADORIA DE SISTEMAS DE GESTÃO</option> 
-                            <option value="diren">PL-DIREN - DIRETORIA DE ENSINO</option> 
-                            <option value="coapepl">PL-COAPEPL - COORDENADORIA DE APOIO AO PLANEJAMENTO E EXECUÇÃO DO PERÍODO LETIVO</option> 
-                            <option value="coed">PL-COED - COORDENADORIA DE EDUCAÇÃO A DISTÂNCIA</option> 
-                            <option value="deape">PL-DEAPE - DEPARTAMENTO DE APRENDIZAGEM, PERMANÊNCIA E ÊXITO</option> 
-                            <option value="coap">PL-COAP - COORDENADORIA DE APOIO PEDAGÓGICO</option> 
-                            <option value="coae">PL-COAE - COORDENADORIA DE ASSISTÊNCIA ESTUDANTIL</option> 
-                            <option value="defg">PL-DEFG - DEPARTAMENTO DE ENSINO DE FORMAÇÃO GERAL</option> 
-                            <option value="cinat">PL-CINAT - COORDENADORIA DA ÁREA DE CIÊNCIAS DA NATUREZA, MATEMÁTICA E SUAS TECNOLOGIAS</option> 
-                            <option value="cnatbio">PL-CNATBIO - COORDENADORIA DA DISCIPLINA DE BIOLOGIA</option> 
-                            <option value="cnatfis">PL-CNATFIS - COORDENADORIA DA DISCIPLINA DE FÍSICA</option> 
-                            <option value="cnatmat">PL-CNATMAT - COORDENADORIA DA DISCIPLINA DE MATEMÁTICA</option> 
-                            <option value="cnatqui">PL-CNATQUI - COORDENADORIA DA DISCIPLINA DE QUÍMICA</option> 
-                            <option value="cochtec">PL-COCHTEC - COORDENADORIA DA ÁREA DE CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS</option> 
-                            <option value="colinc">PL-COLINC - COORDENADORIA DA ÁREA DE LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS</option> 
-                            <option value="afedfis">PL-AFEDFIS - COORDENADORIA DA ÁREA FÍSICA DA DISCIPLINA DE EDUCAÇÃO FÍSICA</option> 
-                            <option value="edfis">PL-EDFIS - COORDENADORIA DA DISCIPLINA DE EDUCAÇÃO FÍSICA</option> 
-                            <option value="degpg">PL-DEGPG - DEPARTAMENTO DE ENSINO DE GRADUAÇÃO E DE PÓS-GRADUAÇÃO</option> 
-                            <option value="cafcfpgnl">PL-CAFCFPGNL - COORD. ÁREA FÍSICA DO CURSO DE FORMAÇÃO PEDAGÓGICA PARA GRADUADOS NÃO LICENCIADOS</option> 
-                            <option value="cafae">PL-CAFAE - COORDENADORIA DE ÁREA FÍSICA DO CURSO DE ENGENHARIA ELÉTRICA</option> 
-                            <option value="cafeq">PL-CAFEQ - COORDENADORIA DE ÁREA FÍSICA DO CURSO SUPERIOR DE ENGENHARIA QUÍMICA</option> 
-                            <option value="caflcomp">PL-CAFLCOMP - COORDENADORIA DE ÁREA FÍSICA DO CURSO SUPERIOR DE LICENCIATURA EM COMPUTAÇÃO</option> 
-                            <option value="cafstsi">PL-CAFSTSI - COORDENADORIA DE ÁREA FÍSICA DO CURSO SUPERIOR DE TECNOLOGIA EM SISTEMAS PARA INTERNET</option> 
-                            <option value="cafgasa">PL-CAFGASA - COORDENADORIA DE ÁREA FÍSICA DOS CURSOS DE GESTÃO AMBIENTAL E SANEAMENTO AMBIENTAL</option> 
-                            <option value="ccposed">PL-CCPOSED - COORDENADORIA DO CURSO DE PÓS-GRADUAÇÃO EM EDUCAÇÃO</option> 
-                            <option value="cposee">PL-CPOSEE - COORDENADORIA DO CURSO DE PÓS-GRADUAÇÃO EM ESPORTE ESCOLAR</option> 
-                            <option value="cfpgnl">PL-CFPGNL - CURSO DE FORMAÇÃO PEDAGÓGICA PARA GRADUADOS NÃO LICENCIADOS</option> 
-                            <option value="mestec">PL-MESTEC - CURSO DE MESTRADO PROFISSIONAL EM EDUCAÇÃO E TECNOLOGIA</option> 
-                            <option value="mesteca">PL-MESTECA - CURSO DE MESTRADO PROFISSIONAL EM ENGENHARIA E CIÊNCIAS AMBIENTAIS</option> 
-                            <option value="cposlv">PL-CPOSLV - CURSO DE PÓS-GRADUAÇÃO EM LINGUAGENS VERBO VISUAIS E TECNOLOGIAS</option> 
-                            <option value="csbd">PL-CSBD - CURSO SUPERIOR DE BACHARELADO EM DESIGN</option> 
-                            <option value="csee">PL-CSEE - CURSO SUPERIOR DE ENGENHARIA ELÉTRICA</option>
-                            <option value="cseq">PL-CSEQ - CURSO SUPERIOR DE ENGENHARIA QUÍMICA</option>
-                            <option value="cslcomp">PL-CSLCOMP - CURSO SUPERIOR DE LICENCIATURA EM COMPUTAÇÃO</option>
-                            <option value="cstga">PL-CSTGA - CURSO SUPERIOR DE TECNOLOGIA EM GESTÃO AMBIENTAL</option>
-                            <option value="cstsa">PL-CSTSA - CURSO SUPERIOR DE TECNOLOGIA EM SANEAMENTO AMBIENTAL</option>
-                            <option value="cstsi">PL-CSTSI - CURSO SUPERIOR DE TECNOLOGIA EM SISTEMAS PARA INTERNET</option>
-
-
-                            <option value="detnm">PL-DETNM - DEPARTAMENTO DE ENSINO TECNICO DE NIVEL MEDIO</option> 
-                            <option value="cafdsign">PL-AFDSIGN - COORD. DE ÁREA FÍSICA DOS CURS. DE DESIGN: COMUN. VISUAL E DES. DE MÓV.</option> 
-                            <option value="cafedi">PL-CAFEDI - COORDENADORIA DE ÁREA FÍSICA DO CURSO TÉCNICO DE EDIFICAÇÕES</option> 
-                            <option value="cafmem">PL-CAFMEM - COORDENADORIA DE ÁREA FÍSICA DO CURSO TÉCNICO DE ELETROMECÂNICA</option> 
-                            <option value="caftro">PL-CAFTRO - COORDENADORIA DE ÁREA FÍSICA DO CURSO TÉCNICO DE ELETRÔNICA</option> 
-                            <option value="caftec">PL-CAFTEC - COORDENADORIA DE ÁREA FÍSICA DO CURSO TÉCNICO DE ELETROTÉCNICA</option> 
-                            <option value="cafmec">PL-CAFMEC - COORDENADORIA DE ÁREA FÍSICA DO CURSO TÉCNICO DE MECÂNICA</option> 
-                            <option value="cafqui">PL-CAFQUI - COORDENADORIA DE ÁREA FÍSICA DO CURSO TÉCNICO DE QUÍMICA</option> 
-                            <option value="caftele">PL-CAFTELE - COORDENADORIA DE ÁREA FÍSICA DO CURSO TÉCNICO EM TELECOMUNICAÇÕES</option> 
-                            <option value="ceja">PL-CEJA - CURSOS NA MODALIDADE EJA</option> 
-
-                             
-                            <option value="edi">PL-EDI - CURSO TÉCNICO DE EDIFICAÇÕES</option> 
-                            <option value="eme">PL-EME - CURSO TÉCNICO DE ELETROMECÂNICA</option> 
-                            <option value="tro">PL-TRO - CURSO TÉCNICO DE ELETRÔNICA</option> 
-                            <option value="tec">PL-TEC - CURSO TÉCNICO DE ELETROTÉCNICA</option> 
-                            <option value="cafmec">PL-MEC - CURSO TÉCNICO DE MECÂNICA</option> 
-                            <option value="qui">PL-QUI - CURSO TÉCNICO DE QUÍMICA</option> 
-                            <option value="ctcv">PL-CTCV - CURSO TÉCNICO EM COMUNICAÇÃO VISUAL</option> 
-                            <option value="design">PL-DESIGN - CURSO TÉCNICO EM DESIGN DE INTERIORES</option> 
-                            <option value="tele">PL-TELE - CURSO TÉCNICO EM TELECOMUNICAÇÕES</option>
-
-
-                            <option value="deefe">PL-DEEFE - DEPARTAMENTO DE ESTRUTURA FUNCIONAL DO ENSINO</option> 
-                            <option value="cobib">PL-COBIB - COORDENADORIA DA BIBLIOTECA</option> 
-                            <option value="coade">PL-COADE - COORDENADORIA DE ADMINISTRAÇÃO ESCOLAR - MANHÃ</option> 
-                            <option value="coaden">PL-COADEN - COORDENADORIA DE ADMINISTRAÇÃO ESCOLAR - NOITE</option> 
-                            <option value="coadet">PL-COADET - COORDENADORIA DE ADMINISTRAÇÃO ESCOLAR - TARDE</option> 
-                            <option value="coaaudi">PL-COAAUDI - COORDENADORIA DE APOIO A ATIVIDADES DE AUDIOVISUAL</option> 
-                            <option value="copeg">PL-COPEG - COORDENADORIA DE PRODUÇÃO E EDITORAÇÃO GRÁFICA</option> 
-
-                            <option value="dirpex">PL-DIRPEX - DIRETORIA DE PESQUISA E EXTENSÃO</option> 
-                            <option value="coapidt">PL-COAPIDT - COORDENADORIA DE APOIO À PESQUISA, INOVAÇÃO E DESENVOLVIMENTO TECNOLÓGICO</option> 
-                            <option value="coac">PL-COAC - COORDENADORIA DE ATIVIDADES CULTURAIS</option> 
-                            <option value="coeve">PL-COEVE - COORDENADORIA DE EVENTOS</option> 
-                            <option value="cofic">PL-COFIC - COORDENADORIA DE FORMAÇÃO INICIAL E CONTINUADA</option> 
-                            <option value="cosie">PL-COSIE - COORDENADORIA DOS SERVIÇOS DE INTEGRAÇÃO COM EMPRESAS</option> 
-                            <option value="caest">PL-CAEST - COORDENADORIA DE APOIO A ESTÁGIOS</option>
-
-                            <option value="gabdir">PL-GABDIR - GABINETE DA DIREÇÃO-GERAL</option> 
-                            <option value="napne">PL-NAPNE - NÚCLEO DE APOIO ÀS PESSOAS COM NECESSIDADES ESPECÍFICAS</option> 
-                        </select> <br><br>
-
-            </fieldset>
-            <br><br>
-
-            <fieldset><legend>  Funções Atuais:</legend>
-                <br>
-                
-
-                <label><strong>Função:</strong>
-                    <select name="escolaridade" class="campo">
-                         <option value="fg"> Função Gratividada - IFES </option>
-                         <option value="cd"> Cargo de Direção - IF - CD </option>
-                         <option value="ec"> Economista </option>
-                         <option value="ec"> Tecnico em Contabilidade </option>
-                    </select>
-                </label>
-
-                <label><strong>Atividade:</strong>
-                    <select name="escolaridade" class="campo">
-                         <option value="fg"> 033 - Coordeandor </option>
-                         <option value="cd"> 0009 - Diretor Geral </option>
-                         <option value="cd"> 0099 - Diretor </option>
-                         <option value="ec"> 0053 - Assessor </option>
-                         <option value="ec"> 0018 - Chefe de Departamento </option>
-                    </select>
-                </label>
-
-                <label><strong>Setor SUAP:</strong>
-                    <select name="escolaridade" class="campo">
-                         <option value="gabdir"> PL-GABDIR</option>
-                         <option value="cd"> Cargo de Direção </option>
-                         <option value="ec"> Economista </option>
-                         <option value="ec"> Tecnico em Contabilidade </option>
-                    </select>
-                </label>
-
-                <label for="lotacao" ><strong>Modelo de Função:</strong></label>
-   
-                            <select name="estado" class="campo5"> 
-                            <option value="cd2">CD2</option> 
-                            <option value="cd3">CD3</option> 
-                            <option value="cd4">CD4</option> 
-                            <option value="fg1">FG1</option> 
-                            <option value="fg2">FG2</option> 
-                            <option value="fg4">FG4</option> 
-                            <option value="fcc">FCC</option> 
-                        </select> <br><br>
-
-
-
-
-                </fieldset>
+            
             <input type="submit" class="btn salvar" value="Salvar">
             <input type="reset" class="btn limpar" value="Limpar">
             <a href="excluir.php"><input type="button" class="btn excluir" value="Excluir"></a>
